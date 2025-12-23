@@ -1,11 +1,9 @@
 import game_manager as gm
 import constants as cons
-
 import win32gui
 import pyautogui
 import time
 import os
-import re
 
 def read_address():
     if not os.path.exists('address.txt'):
