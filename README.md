@@ -5,7 +5,8 @@
 -------------------------------
 
 ## 部署：
-### Step 1. 下载Realease并解压
+
+### Step 1. 下载 Release 并解压
 
 ### Step 2. 修改 `address.txt` 文件
 
