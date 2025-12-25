@@ -5,37 +5,30 @@
 -------------------------------
 
 ## 部署：
-### Step 1. 打包
-```powershell
-pip install -r requirements.txt
-pip install pyinstaller
-pyinstaller -n <YourServerName> hll_enter_server_script\main.py --hidden-import=game_manager --hidden-import=constants
-```
-（将 `<YourServerName>` 替换成你的服务器简称）
+### Step 1. 下载Realease并解压
 
-### Step 2. 将 `address.txt` 放入打包生成的 `dist/YourServerName` 文件夹下
-`address.txt` 文件内容为你的服务器游戏端口的套接字地址，形如 ``xx.xx.xx.xx:xxxx``，不应有其他字符。
-文件夹结构如下
+### Step 2. 修改 `address.txt` 文件
+
+`address.txt` 文件内容为你的服务器游戏端口的套接字地址，形如 ``xx.xx.xx.xx:xxxx``，不应有其他字符。    
+文件夹结构示例如下：
 ```text
-dist/
-└── circle_3/
-    ├── _internal/
-    ├── circle_3.exe
-    └── address.txt
+circle_3/
+├── _internal/
+├── circle_3.exe
+└── address.txt
 ```
-### Step 3. 将 `<YourServerName>` 文件夹放到目标机器上即可。双击exe即可运行
+### Step 3. 双击exe即可运行
 
-### 另外地，需确保一下文件在目标机器上至少存在一个：
+_你可以自行为exe文件创建快捷方式。_
+
+### Step x. 另外地，需确保以下文件至少存在一个：
+
 ```text
 C:\Users\Fish\Desktop\Steam.lnk
 C:\Users\Public\Desktop\Steam.lnk
 C:\Steam.lnk
 ```
 即在桌面上或C盘根目录里至少存在一个Steam的快捷方式
-
---------------------------------
-
-_**你可以自行对文件夹里的exe文件创建快捷方式**_
 
 --------------------------------
 
